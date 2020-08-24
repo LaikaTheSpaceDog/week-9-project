@@ -6,7 +6,7 @@ import Square from "./Square.js"
 
 const Stuff = () => (
     <>
-      <Header />
+      <Header text="Hello, world!"/>
       <Paragraph />
       <Square />
       <People />
