@@ -1,10 +1,11 @@
 import React from 'react';
-import Stuff from "./components/Stuff.js";
-
+import Header from "./components/Header.js"
+import Content from "./components/Content.js";
 
 const App = () => (
   <>
-    <Stuff />
+    <Header />
+    <Content />
   </>
   );
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Header = () => (
-    <header className="jumbotron">
-        <h1>Hello, world</h1>
+    <header>
+        <h1>My App</h1>
     </header>
 );
 
