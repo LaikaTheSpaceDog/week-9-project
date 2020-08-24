@@ -1,15 +1,17 @@
 import React from 'react';
 
-let names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
-
-const People = () => (
+const People = props => (
     <ul className="list-group">
-        { names.map((value, index) => (
+        { props.names.map((value, index) => (
             <li className="list-group-item" key={ index }>
                { value }
             </li>
         )) }
     </ul>
 );
+
+People.defaultProps = {
+    names: ["Nobody here!"]
+}
 
 export default People;
