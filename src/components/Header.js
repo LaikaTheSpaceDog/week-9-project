@@ -6,4 +6,8 @@ const Header = props => (
     </header>
 );
 
+Header.defaultProps = {
+    text: "Hello, world!"
+}
+
 export default Header;
