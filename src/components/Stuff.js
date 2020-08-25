@@ -8,6 +8,7 @@ import Clicked from "./Clicked.js"
 import ToggleText from "./ToggleText.js"
 import Counter from "./Counter.js"
 import StepCounter from "./StepCounter.js"
+import CatchMeIfYouCan from './CatchMeIfYouCan.js';
 
 const Stuff = ({square}) => (
     <>
@@ -26,6 +27,7 @@ const Stuff = ({square}) => (
         <ToggleText initial="Hello" alternate="World" />
         <Counter initial={ 50 } max={ 100 } />
         <StepCounter max={ 100 } step={ 5 } />
+        <CatchMeIfYouCan jump={ 100 } />
     </>
     );
 
