@@ -6,6 +6,7 @@ import Square from "./Square.js"
 import Basket from "./Basket.js"
 import Clicked from "./Clicked.js"
 import ToggleText from "./ToggleText.js"
+import Counter from "./Counter.js"
 
 const Stuff = ({square}) => (
     <>
@@ -22,6 +23,7 @@ const Stuff = ({square}) => (
         ] } />
         <Clicked />
         <ToggleText initial="Hello" alternate="World" />
+        <Counter initial={ 50 } max={ 100 } />
     </>
     );
 
