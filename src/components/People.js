@@ -3,7 +3,7 @@ import React from 'react';
 const People = ({names}) => (
     <>
         {!names ? <p>Nobody here</p> : 
-            <ul className="list-group">
+            <ul className="list-group pt-5">
                 { names.map((value, index) => (
                     <li className="list-group-item" key={ index }>
                     { value }

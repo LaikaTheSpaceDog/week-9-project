@@ -3,7 +3,13 @@ import BasketItem from './BasketItem';
 
 const Basket = ({items}) => (
     <>
-        <BasketItem price={ item.price } name={ item.name }/>
+        {!items ? null :
+            <ul className="list-group pt-5">
+                {items.map((item, index) => (
+                    <BasketItem price={ item.price } name={ item.name } key={index}/>
+                ))}
+            </ul>
+        }
     </>
 );
 
@@ -12,3 +18,4 @@ Basket.defaultProps = {
 }
 
 export default Basket;
+

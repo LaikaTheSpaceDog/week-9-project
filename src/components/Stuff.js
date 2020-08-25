@@ -5,13 +5,6 @@ import People from "./People.js"
 import Square from "./Square.js"
 import Basket from "./Basket.js"
 
-let items = [
-  { name: "Coffee", price: 2.10 },
-  { name: "Bananas", price: 3.50 },
-  { name: "Milk", price: 250.65 },
-  { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
-];
-
 const Stuff = ({square}) => (
     <>
       <Header>What an amazing website</Header>
@@ -19,7 +12,12 @@ const Stuff = ({square}) => (
       {!square ? null :
       <Square colour="yellow"/>}
       <People names={ ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] }/>
-      <Basket items={ items } />
+      <Basket items={ [
+        { name: "Coffee", price: 2.10 },
+        { name: "Bananas", price: 3.50 },
+        { name: "Milk", price: 250.65 },
+        { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
+        ] } />
     </>
     );
 
