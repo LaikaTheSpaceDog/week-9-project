@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Paragraph = props => (
-    <p>{ props.message }</p>
+const Paragraph = ({children}) => (
+    <p>{ children }</p>
 );
 
 export default Paragraph;
