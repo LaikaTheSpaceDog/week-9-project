@@ -5,6 +5,7 @@ import People from "./People.js"
 import Square from "./Square.js"
 import Basket from "./Basket.js"
 import Clicked from "./Clicked.js"
+import ToggleText from "./ToggleText.js"
 
 const Stuff = ({square}) => (
     <>
@@ -20,6 +21,7 @@ const Stuff = ({square}) => (
         { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
         ] } />
         <Clicked />
+        <ToggleText initial="Hello" alternate="World" />
     </>
     );
 
