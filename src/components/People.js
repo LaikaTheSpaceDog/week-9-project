@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const People = ({names}) => (
-    <>
-        {!names ? <p>Nobody here</p> : 
-            <ul className="list-group pt-5">
-                { names.map((value, index) => (
-                    <li className="list-group-item" key={ index }>
-                    { value }
-                    </li>
-                ))}
-            </ul>
-        }
-    </>
+class People extends Component {
+    
+    handleClick() {
+        console.log("Clicked");
+    }
 
-);
+    render() {
+        let { names } = this.props;
+
+        return (
+            <>
+            {!names ? <p>Nobody here</p> : 
+                <ul className="list-group pt-5" onClick={ this.handleClick }>
+                    { names.map((value, index) => (
+                        <li className="list-group-item" key={ index }>
+                        { value }
+                        </li>
+                    ))}
+                </ul>
+            }
+        </>
+        );
+    }
+}
+
 
 // People.defaultProps = {
 //     names: ["Nobody here!"]
