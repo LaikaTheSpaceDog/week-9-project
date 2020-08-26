@@ -6,7 +6,7 @@ class RollCall extends Component {
         super(props);
 
         this.state = {
-            counter: 0,
+            index: 0,
         }
 
         this.handleClick = this.handleClick.bind(this);
@@ -14,11 +14,12 @@ class RollCall extends Component {
     }
 
     handleClick() {
-        let current = this.state.counter;
-        if (current < (this.props.names.length - 1)) {
-            this.setState({counter: current + 1})
+        let current = this.state.index;
+        let { names } = this.props;
+        if (current < (names.length - 1)) {
+            this.setState({index: current + 1})
         } else {
-            this.setState({counter: current = 0})
+            this.setState({index: 0})
         }   
     }
 
@@ -26,7 +27,7 @@ class RollCall extends Component {
 
         return (
             <>
-                <p>{this.props.names[this.state.counter]}</p>
+                <p>{this.props.names[this.state.index]}</p>
                 <button onClick={ this.handleClick }>Next</button>
             </>
         );
