@@ -11,6 +11,7 @@ import StepCounter from "./StepCounter.js"
 import CatchMeIfYouCan from './CatchMeIfYouCan.js'
 import RollCall from './RollCall.js'
 import GodCounter from './GodCounter'
+import TwoCounters from './TwoCounters'
 
 const Stuff = ({square}) => (
     <>
@@ -32,6 +33,7 @@ const Stuff = ({square}) => (
         <CatchMeIfYouCan jump={ 100 } />
         <RollCall names={ ["Alex", "Dean", "Gilson", "Marta", "Oliver", "Oscar", "Rohan", "Tom", "Will", "Zack"] } />
         <GodCounter />
+        <TwoCounters />
     </>
     );
 
