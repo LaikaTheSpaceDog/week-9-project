@@ -12,6 +12,7 @@ import CatchMeIfYouCan from './CatchMeIfYouCan.js'
 import RollCall from './RollCall.js'
 import GodCounter from './GodCounter'
 import TwoCounters from './TwoCounters'
+import LightBox from './LightBox.js'
 
 const Stuff = ({square}) => (
     <>
@@ -34,6 +35,7 @@ const Stuff = ({square}) => (
         <RollCall names={ ["Alex", "Dean", "Gilson", "Marta", "Oliver", "Oscar", "Rohan", "Tom", "Will", "Zack"] } />
         <GodCounter />
         <TwoCounters />
+        <LightBox src={"https://d1dd4ethwnlwo2.cloudfront.net/wp-content/uploads/2018/10/bubz3.jpeg"}/>
     </>
     );
 
