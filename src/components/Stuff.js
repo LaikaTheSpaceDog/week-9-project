@@ -15,6 +15,7 @@ import TwoCounters from './TwoCounters'
 import LightBox from './LightBox.js'
 import Length from './Length.js'
 import PasswordStrength from './PasswordStrength.js'
+import TempConverter from './TempConverter.js'
 
 const Stuff = ({square}) => (
     <>
@@ -40,6 +41,7 @@ const Stuff = ({square}) => (
         <LightBox src={"https://d1dd4ethwnlwo2.cloudfront.net/wp-content/uploads/2018/10/bubz3.jpeg"}/>
         <Length label={ "Label" } name={ "Test" } />
         <PasswordStrength label={ "Password" } name={ "password" }/>
+        <TempConverter />
     </>
     );
 
