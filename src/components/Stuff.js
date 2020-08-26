@@ -16,6 +16,7 @@ import LightBox from './LightBox.js'
 import Length from './Length.js'
 import PasswordStrength from './PasswordStrength.js'
 import TempConverter from './TempConverter.js'
+import List from './List.js'
 
 const Stuff = ({square}) => (
     <>
@@ -42,6 +43,7 @@ const Stuff = ({square}) => (
         <Length label={ "Label" } name={ "Test" } />
         <PasswordStrength label={ "Password" } name={ "password" }/>
         <TempConverter />
+        <List />
     </>
     );
 

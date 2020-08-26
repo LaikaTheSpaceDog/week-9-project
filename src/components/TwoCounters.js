@@ -27,12 +27,12 @@ class TwoCounters extends Component {
 
     componentDidMount() {
         let { counter1, counter2 } = this.state;
-        document.title = `${counter1 + counter2}`;
+        document.title = counter1 + counter2;
     }
 
     componentDidUpdate() {
         let { counter1, counter2 } = this.state;
-        document.title = `${counter1 + counter2}`;
+        document.title = counter1 + counter2;
     }
 
     render() {
