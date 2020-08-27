@@ -3,6 +3,9 @@ import Stuff from "./components/Stuff.js";
 import Header from "./components/Header.js";
 import Content from "./components/Content.js"
 import GodCounter from "./components/GodCounter.js"
+import PasswordStrength from "./components/PasswordStrength.js"
+import Basket from "./components/Basket.js"
+import CatchMeIfYouCan from "./components/CatchMeIfYouCan.js"
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 const App = () => (
@@ -16,6 +19,20 @@ const App = () => (
     </Route>
     <Route exact path="/god">
       <GodCounter />
+    </Route>
+    <Route exact path="/password">
+      <PasswordStrength label={ "Password" } name={ "password" }/>
+    </Route>
+    <Route exact path="/basket">
+      <Basket items={ [
+          { name: "Coffee", price: 2.10 },
+          { name: "Bananas", price: 3.50 },
+          { name: "Milk", price: 250.65 },
+          { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
+          ] } />
+    </Route>
+    <Route exact path="/catch">
+      <CatchMeIfYouCan jump={ 100 } />
     </Route>
   </Router>
   );
