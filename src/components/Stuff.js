@@ -18,6 +18,7 @@ import PasswordStrength from './PasswordStrength.js'
 import TempConverter from './TempConverter.js'
 import List from './List.js'
 import Adder from './Adder.js'
+import Transform from './Transform.js'
 
 const Stuff = ({square}) => (
     <>
@@ -46,6 +47,7 @@ const Stuff = ({square}) => (
         <TempConverter />
         <List />
         <Adder />
+        <Transform transform={ x => x * x } />
     </>
     );
 
