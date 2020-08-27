@@ -14,6 +14,7 @@ import TempConverter from './TempConverter.js'
 import List from './List.js'
 import Adder from './Adder.js'
 import Transform from './Transform.js'
+import Progress from './Progress.js'
 
 const Stuff = ({square}) => (
     <>
@@ -33,6 +34,7 @@ const Stuff = ({square}) => (
       <List />
       <Adder />
       <Transform transform={ x => x * x } />
+      <Progress />
     </>
     );
 
