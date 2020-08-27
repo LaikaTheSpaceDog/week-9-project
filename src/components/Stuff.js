@@ -17,6 +17,7 @@ import Length from './Length.js'
 import PasswordStrength from './PasswordStrength.js'
 import TempConverter from './TempConverter.js'
 import List from './List.js'
+import Adder from './Adder.js'
 
 const Stuff = ({square}) => (
     <>
@@ -44,6 +45,7 @@ const Stuff = ({square}) => (
         <PasswordStrength label={ "Password" } name={ "password" }/>
         <TempConverter />
         <List />
+        <Adder />
     </>
     );
 
