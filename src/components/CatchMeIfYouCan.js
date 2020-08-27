@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
+
 
 class CatchMeIfYouCan extends Component {
 
@@ -22,7 +24,8 @@ class CatchMeIfYouCan extends Component {
 
         return (
             <>
-                <button onClick={ this.handleClick } style={{position: "relative", top: this.state.counter}}>Catch me!</button>
+                {/* <button onClick={ this.handleClick } style={{position: "relative", top: this.state.counter}}>Catch me!</button> */}
+                <Button onClick={ this.handleClick } style={{position: "relative", top: this.state.counter}}>Catch me!</Button>
             </>
         );
     }
