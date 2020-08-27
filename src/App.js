@@ -1,14 +1,23 @@
 import React from 'react';
-// import Header from "./components/Header.js"
-// import Content from "./components/Content.js";
 import Stuff from "./components/Stuff.js";
+import Header from "./components/Header.js";
+import Content from "./components/Content.js"
+import GodCounter from "./components/GodCounter.js"
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 const App = () => (
-  <>
-    {/* <Header />
-    <Content /> */}
-    <Stuff />
-  </>
+  <Router>
+    <Header>What an amazing website!</Header>
+    <Route exact path="/">
+      <Stuff />
+    </Route>
+    <Route exact path="/content">
+      <Content />
+    </Route>
+    <Route exact path="/god">
+      <GodCounter />
+    </Route>
+  </Router>
   );
 
 export default App;

@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from "./Header.js";
 import Paragraph from "./Paragraph.js"
 import People from "./People.js"
 import Square from "./Square.js"
@@ -10,7 +9,6 @@ import Counter from "./Counter.js"
 import StepCounter from "./StepCounter.js"
 import CatchMeIfYouCan from './CatchMeIfYouCan.js'
 import RollCall from './RollCall.js'
-import GodCounter from './GodCounter'
 import TwoCounters from './TwoCounters'
 import LightBox from './LightBox.js'
 import Length from './Length.js'
@@ -22,7 +20,6 @@ import Transform from './Transform.js'
 
 const Stuff = ({square}) => (
     <>
-      <Header>What an amazing website</Header>
       <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam tu hanc copiosiorem etiam soles dicere. Ubi ut eam caperet aut quando? Videmus igitur ut conquiescere ne infantes quidem possint. Magna laus. Bonum patria: miserum exilium. Sed tu istuc dixti bene Latine, parum plane. Duo Reges: constructio interrete. Ergo hoc quidem apparet, nos ad agendum esse natos.</Paragraph>
       {!square ? null :
       <Square colour="yellow"/>}
@@ -39,7 +36,6 @@ const Stuff = ({square}) => (
         <StepCounter max={ 100 } step={ 5 } />
         <CatchMeIfYouCan jump={ 100 } />
         <RollCall names={ ["Alex", "Dean", "Gilson", "Marta", "Oliver", "Oscar", "Rohan", "Tom", "Will", "Zack"] } />
-        <GodCounter />
         <TwoCounters />
         <LightBox src={"https://d1dd4ethwnlwo2.cloudfront.net/wp-content/uploads/2018/10/bubz3.jpeg"}/>
         <Length label={ "Label" } name={ "Test" } />
