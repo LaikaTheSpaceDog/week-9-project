@@ -8,6 +8,7 @@ import PasswordStrength from "./components/PasswordStrength.js"
 import Basket from "./components/Basket.js"
 import CatchMeIfYouCan from "./components/CatchMeIfYouCan.js"
 import Footer from "./components/Footer.js"
+import Square from "./components/Square.js"
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 
@@ -37,6 +38,11 @@ const App = () => (
       </Route>
       <Route exact path="/catch">
         <CatchMeIfYouCan jump={ 100 } />
+      </Route>
+      <Route exact path="/square/:colour" render={ ({ match }) => (
+        <Square colour={ match.params.colour }/>
+      ) }>
+
       </Route>
       <FourOhFour />
     </Switch>
