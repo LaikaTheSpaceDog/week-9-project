@@ -17,14 +17,14 @@ class StepCounter extends Component {
     handleClickUp() {
         let current = this.state.counter;
         if (current < this.props.max) {
-            this.setState({counter: current + this.props.step})
+            this.setState({counter: current + Number(this.props.step)})
         }
     }
 
     handleClickDown() {
         let current = this.state.counter;
         if (current > 0) {
-            this.setState({counter: current - this.props.step})
+            this.setState({counter: current - Number(this.props.step)})
         }
     }
 

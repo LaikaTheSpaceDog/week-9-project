@@ -9,6 +9,7 @@ import Basket from "./components/Basket.js"
 import CatchMeIfYouCan from "./components/CatchMeIfYouCan.js"
 import Footer from "./components/Footer.js"
 import Square from "./components/Square.js"
+import StepCounter from "./components/StepCounter"
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 
@@ -42,7 +43,10 @@ const App = () => (
       <Route exact path="/square/:colour" render={ ({ match }) => (
         <Square colour={ match.params.colour }/>
       ) }>
-
+      </Route>
+      <Route exact path="/step/:max/:step" render={ ({ match }) => (
+        <StepCounter max={ match.params.max } step={ match.params.step }/>
+      ) }>
       </Route>
       <FourOhFour />
     </Switch>
