@@ -6,6 +6,7 @@ import GodCounter from "./components/GodCounter.js"
 import PasswordStrength from "./components/PasswordStrength.js"
 import Basket from "./components/Basket.js"
 import CatchMeIfYouCan from "./components/CatchMeIfYouCan.js"
+import Footer from "./components/Footer.js"
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 const App = () => (
@@ -34,6 +35,7 @@ const App = () => (
     <Route exact path="/catch">
       <CatchMeIfYouCan jump={ 100 } />
     </Route>
+    <Footer />
   </Router>
   );
 
