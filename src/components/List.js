@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Form, Button } from 'react-bootstrap';
+
 
 class List extends Component {
     
@@ -29,8 +31,16 @@ class List extends Component {
 
         return (
             <>
+                <Form>
+                    <Form.Group>
+                        <Form.Label>List</Form.Label>
+                        <Form.Control onChange={ this.handleChange } type="text" value={ this.state.input } placeholder="Add item to list"></Form.Control>
+                        <Button></Button>
+                    </Form.Group>
+                </Form>
                 
-                <div className="form-group">
+                
+                {/* <div className="form-group">
                     <label>List</label>
                     <div className="input-group mb-3">
                         <div className="input-group-prepend">
@@ -44,7 +54,7 @@ class List extends Component {
                     {this.state.arr.map((item, index) => (
                         <li className="list-group-item" key={ index }>{ item }</li>
                     ))}
-                </ul>
+                </ul> */}
             </>
         );
     }
