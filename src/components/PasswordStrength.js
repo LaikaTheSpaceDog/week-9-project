@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Form } from 'react-bootstrap';
+
 
 class PasswordStrength extends Component {
 
@@ -31,10 +33,17 @@ class PasswordStrength extends Component {
     render() {
 
         return (
-            <div className="formGroup">
-                <label>{ this.props.label }</label>
-                <input onChange={ this.handleChange } className="form-control"  name={ this.props.name } value={this.state.input} type="text" style={{ marginTop: 10, marginBottom: 10, backgroundColor: this.alert()}}/>
-            </div>
+            <Form>
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Password Checker</Form.Label>
+                    <Form.Control type="password" placeholder="Password" onChange={ this.handleChange } name={ this.props.name } value={this.state.input} style={{ backgroundColor: this.alert() }} />
+                </Form.Group>
+            </Form>
+            
+            // <div className="formGroup">
+            //     <label>{ this.props.label }</label>
+            //     <input onChange={ this.handleChange } className="form-control"  name={ this.props.name } value={this.state.input} type="text" style={{ marginTop: 10, marginBottom: 10, backgroundColor: this.alert()}}/>
+            // </div>
         );
     }
 }
