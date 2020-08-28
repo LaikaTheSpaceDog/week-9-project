@@ -10,7 +10,7 @@ import CatchMeIfYouCan from "./components/CatchMeIfYouCan.js"
 import Footer from "./components/Footer.js"
 import Square from "./components/Square.js"
 import StepCounter from "./components/StepCounter"
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {HashRouter as Router, Route, Switch} from "react-router-dom";
 
 
 const App = () => (
