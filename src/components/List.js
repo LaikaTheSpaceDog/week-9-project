@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, ListGroup } from 'react-bootstrap';
 
 
 class List extends Component {
@@ -22,6 +22,7 @@ class List extends Component {
     }
 
     handleClick(e) {
+        e.preventDefault()
         let arr = this.state.arr;
         this.setState({ arr: arr.concat(this.state.input)});
         this.setState({ input: "" })
@@ -35,8 +36,13 @@ class List extends Component {
                     <Form.Group>
                         <Form.Label>List</Form.Label>
                         <Form.Control onChange={ this.handleChange } type="text" value={ this.state.input } placeholder="Add item to list"></Form.Control>
-                        <Button></Button>
+                        <Button variant="primary" type="submit" onClick={ this.handleClick }>Click me</Button>
                     </Form.Group>
+                    <ListGroup>
+                        {this.state.arr.map((item, index) => (
+                            <ListGroup.Item className="list-group-item" key={ index }>{ item }</ListGroup.Item>
+                        ))}
+                    </ListGroup>
                 </Form>
                 
                 
