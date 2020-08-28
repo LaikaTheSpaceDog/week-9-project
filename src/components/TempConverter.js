@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form } from 'react-bootstrap';
 
 class TempConverter extends Component {
 
@@ -41,12 +42,22 @@ class TempConverter extends Component {
     render() {
 
         return (
-            <div className="formGroup">
-                <label>Celsius</label>
-                <input onChange={ this.handleChange1 } className="form-control"  name="celsius" value={this.state.input1} style={{ marginTop: 10, marginBottom: 10}}/>
-                <label>Fahrenheit</label>
-                <input onChange={ this.handleChange2 } className="form-control"  name="Fahrenheit" value={this.state.input2} style={{ marginTop: 10, marginBottom: 10}}/>
-            </div>
+
+            <Form>
+                <Form.Group>
+                    <Form.Label>Celsius</Form.Label>
+                    <Form.Control onChange={ this.handleChange1 } type="number" value={ this.state.input1 }></Form.Control>
+                    <Form.Label>Fahrenheit</Form.Label>
+                    <Form.Control onChange={ this.handleChange2 } type="number" value={ this.state.input2 }></Form.Control>
+                </Form.Group>
+            </Form>
+
+            // <div className="formGroup">
+            //     <label>Celsius</label>
+            //     <input onChange={ this.handleChange1 } className="form-control"  name="celsius" value={this.state.input1} style={{ marginTop: 10, marginBottom: 10}}/>
+            //     <label>Fahrenheit</label>
+            //     <input onChange={ this.handleChange2 } className="form-control"  name="Fahrenheit" value={this.state.input2} style={{ marginTop: 10, marginBottom: 10}}/>
+            // </div>
         );
     }
 }
