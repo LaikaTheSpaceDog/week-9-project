@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/LaikaTheSpaceDog/week-9-project/precache-manifest.345791c2c05e3b427cee418cb58d2ebc.js"
+  "/LaikaTheSpaceDog/week-9-project/precache-manifest.aa6d762907e8c6f2d820e3c646917b3c.js"
 );
 
 self.addEventListener('message', (event) => {
