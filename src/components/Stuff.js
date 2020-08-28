@@ -15,6 +15,7 @@ import List from './List.js'
 import Adder from './Adder.js'
 import Transform from './Transform.js'
 import Progress from './Progress.js'
+import Dates from './Dates.js'
 
 const Stuff = ({square}) => (
     <>
@@ -35,6 +36,7 @@ const Stuff = ({square}) => (
       <Adder />
       <Transform transform={ x => x * x } />
       <Progress />
+      <Dates />
     </>
     );
 
