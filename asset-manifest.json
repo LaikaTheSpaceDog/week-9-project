@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/LaikaTheSpaceDog/week-9-project/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/LaikaTheSpaceDog/week-9-project/static/js/main.5780db04.chunk.js",
-    "main.js.map": "/LaikaTheSpaceDog/week-9-project/static/js/main.5780db04.chunk.js.map",
-    "runtime-main.js": "/LaikaTheSpaceDog/week-9-project/static/js/runtime-main.f8d9f62e.js",
-    "runtime-main.js.map": "/LaikaTheSpaceDog/week-9-project/static/js/runtime-main.f8d9f62e.js.map",
-    "static/css/2.25ff2e5b.chunk.css": "/LaikaTheSpaceDog/week-9-project/static/css/2.25ff2e5b.chunk.css",
-    "static/js/2.dfeec518.chunk.js": "/LaikaTheSpaceDog/week-9-project/static/js/2.dfeec518.chunk.js",
-    "static/js/2.dfeec518.chunk.js.map": "/LaikaTheSpaceDog/week-9-project/static/js/2.dfeec518.chunk.js.map",
-    "index.html": "/LaikaTheSpaceDog/week-9-project/index.html",
-    "precache-manifest.aa6d762907e8c6f2d820e3c646917b3c.js": "/LaikaTheSpaceDog/week-9-project/precache-manifest.aa6d762907e8c6f2d820e3c646917b3c.js",
-    "service-worker.js": "/LaikaTheSpaceDog/week-9-project/service-worker.js",
-    "static/css/2.25ff2e5b.chunk.css.map": "/LaikaTheSpaceDog/week-9-project/static/css/2.25ff2e5b.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/LaikaTheSpaceDog/week-9-project/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.dfeec518.chunk.js.LICENSE.txt": "/LaikaTheSpaceDog/week-9-project/static/js/2.dfeec518.chunk.js.LICENSE.txt"
+    "main.css": "/week-9-project/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/week-9-project/static/js/main.77ad2958.chunk.js",
+    "main.js.map": "/week-9-project/static/js/main.77ad2958.chunk.js.map",
+    "runtime-main.js": "/week-9-project/static/js/runtime-main.96a197a9.js",
+    "runtime-main.js.map": "/week-9-project/static/js/runtime-main.96a197a9.js.map",
+    "static/css/2.25ff2e5b.chunk.css": "/week-9-project/static/css/2.25ff2e5b.chunk.css",
+    "static/js/2.dfeec518.chunk.js": "/week-9-project/static/js/2.dfeec518.chunk.js",
+    "static/js/2.dfeec518.chunk.js.map": "/week-9-project/static/js/2.dfeec518.chunk.js.map",
+    "index.html": "/week-9-project/index.html",
+    "precache-manifest.63baa0a8f281547515edeceaa3d341b2.js": "/week-9-project/precache-manifest.63baa0a8f281547515edeceaa3d341b2.js",
+    "service-worker.js": "/week-9-project/service-worker.js",
+    "static/css/2.25ff2e5b.chunk.css.map": "/week-9-project/static/css/2.25ff2e5b.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/week-9-project/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.dfeec518.chunk.js.LICENSE.txt": "/week-9-project/static/js/2.dfeec518.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8d9f62e.js",
+    "static/js/runtime-main.96a197a9.js",
     "static/css/2.25ff2e5b.chunk.css",
     "static/js/2.dfeec518.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.5780db04.chunk.js"
+    "static/js/main.77ad2958.chunk.js"
   ]
 }
