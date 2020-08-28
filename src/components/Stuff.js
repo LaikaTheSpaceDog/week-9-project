@@ -16,7 +16,7 @@ import Adder from './Adder.js'
 import Transform from './Transform.js'
 import Progress from './Progress.js'
 import Dates from './Dates.js'
-import Components from './Carousel.js'
+import Headline from './Headline.js'
 
 const Stuff = ({square}) => (
     <>
@@ -38,7 +38,7 @@ const Stuff = ({square}) => (
       <Transform transform={ x => x * x } />
       <Progress />
       <Dates />
-      <Components />
+      <Headline message={"Dinosaurs!"}/>
     </>
     );
 

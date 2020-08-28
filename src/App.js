@@ -10,6 +10,7 @@ import CatchMeIfYouCan from "./components/CatchMeIfYouCan.js"
 import Footer from "./components/Footer.js"
 import Square from "./components/Square.js"
 import StepCounter from "./components/StepCounter"
+import Component from "./components/Carousel"
 import {HashRouter as Router, Route, Switch} from "react-router-dom";
 
 
@@ -47,6 +48,9 @@ const App = () => (
       <Route exact path="/step/:max/:step" render={ ({ match }) => (
         <StepCounter max={ match.params.max } step={ match.params.step }/>
       ) }>
+      </Route>
+      <Route exact path="/carousel">
+        <Component />
       </Route>
       <FourOhFour />
     </Switch>

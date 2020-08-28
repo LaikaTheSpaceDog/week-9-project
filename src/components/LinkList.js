@@ -22,6 +22,9 @@ const LinkList = () => (
         <li className="nav-item">
             <Link className="nav-link" to="/catch">Button catcher</Link>
         </li>
+        <li className="nav-item">
+            <Link className="nav-link" to="/carousel">Carousel</Link>
+        </li>
     </ul>
 );
 
